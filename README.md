@@ -53,13 +53,21 @@ disp.show('1234')
 disp.set_segments([0x3F, 0x06, 0x5B, 0x4F])  # Displays '0123'
 ```
 
-### 5. Clearing the display
+### 5. Lights a specific number of LEDs on a linear scale of 32 LEDs
+
+```python
+# Light the number of LEDs equal to num on a linear scale of 32 LEDs
+num = 11
+disp.show_num_on_scale(num)
+```
+
+### 6. Clearing the display
 
 ```python
 disp.clear()
 ```
 
-### 6. Turning the display on/off
+### 7. Turning the display on/off
 
 ```python
 disp.display_off()
