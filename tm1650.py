@@ -1,3 +1,8 @@
+# MIT License (MIT)
+# Copyright (c) 2025 Oleksandr Teteria
+# This code was generated in part with the assistance of artificial intelligence (GitHub Copilot).
+# Reviewed, adapted and tested on Pi Pico with RP2040 by Oleksandr Teteria.
+
 from machine import I2C, Pin
 import time
 
@@ -86,7 +91,7 @@ class TM1650:
         self.write_raw(3-digit, 2**rem-1)    
 
 if __name__ == '__main__':
-    # Приклад використання:
+    # Приклади використання:
     # initialization
     i2c = I2C(0, sda=machine.Pin(0), scl=machine.Pin(1), freq=100_000)
     disp = TM1650(i2c)
@@ -115,13 +120,9 @@ if __name__ == '__main__':
         disp.set_segments([0, 0, 0, disp.SEGMENTS[seg]])
         time.sleep(1)
 
-    for i in range(9):
-        disp.write_raw(2, 2**i-1)
-        time.sleep(1)
-    
     # Sequential LED lighting on a linear scale of 32 LEDs
     disp.clear()
-    for num in range(17):
+    for num in range(33):
         disp.show_num_on_scale(num)
         time.sleep(1)
     
@@ -132,3 +133,4 @@ if __name__ == '__main__':
     time.sleep(1)
     
     disp.clear()
+
