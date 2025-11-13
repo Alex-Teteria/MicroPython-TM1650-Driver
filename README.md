@@ -78,6 +78,10 @@ disp.display_on()
 
 The `SEGMENTS` dictionary in `tm1650.py` can be extended with new characters by adding the corresponding segment masks.
 
+## Example of using the tm1650 chip together with the ky040 encoder on an LED scale with 30 LEDs
+Example of using the led_scale_demo.py:  
+https://youtube.com/shorts/w_kjoDNFi4A?feature=share
+
 ## License
 
 MIT
