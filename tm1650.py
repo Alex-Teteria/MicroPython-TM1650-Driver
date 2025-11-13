@@ -1,3 +1,8 @@
+# MIT License (MIT)
+# Copyright (c) 2025 Oleksandr Teteria
+# This code was generated in part with the assistance of artificial intelligence (GitHub Copilot).
+# Reviewed, adapted and tested on Pi Pico with RP2040 by Oleksandr Teteria.
+
 from machine import I2C, Pin
 import time
 
@@ -128,3 +133,4 @@ if __name__ == '__main__':
             time.sleep(0.5)
         time.sleep(6)
         disp.clear()
+
