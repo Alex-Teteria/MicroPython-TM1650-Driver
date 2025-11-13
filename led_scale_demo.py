@@ -1,3 +1,6 @@
+# MIT License (MIT)
+# Copyright (c) 2025 Oleksandr Teteria
+
 from machine import I2C
 from ky040_encoder import RotaryEncoder
 from tm1650 import TM1650
@@ -60,5 +63,6 @@ while True:
         while not pin_mode.value():
             pass
         mode = not mode
+
 
         
