@@ -4,7 +4,7 @@ This repository contains a MicroPython driver for 4-digit 7-segment displays bas
 
 ## Features
 
-- Supports all 8 brightness levels (0–7)
+- Supports all 8 brightness levels (1–8)
 - Display of numbers, letters, and special symbols (extensible character set)
 - Direct control of individual segments (raw segment bytes per digit)
 - Display on/off, display clear
@@ -36,7 +36,7 @@ disp = TM1650(i2c)
 ### 2. Brightness
 
 ```python
-disp.set_brightness(5)  # 0 (min) ... 7 (max)
+disp.set_brightness(5)  # 1 (min) ... 8 (max)
 ```
 
 ### 3. Displaying text
